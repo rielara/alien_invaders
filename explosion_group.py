@@ -7,7 +7,7 @@ class Explosion(pygame.sprite.Sprite):
 		pygame.sprite.Sprite.__init__(self)
 		self.images = []
 		for num in range(1, 6):
-			img = pygame.image.load(f'explosion/{num}.png.')
+			img = pygame.image.load(f'explosion/{num}.png')
 			#high_score_str = "HIGH SCORE: {:,}".format(high_score)
 
 			img = pygame.transform.scale(img, (100, 100))
