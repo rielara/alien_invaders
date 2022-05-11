@@ -58,7 +58,7 @@ class AlienInvasion:
                 self._update_bullets()
                 self._update_aliens()
             self._update_screen()
-    se.background_sound.play()
+        se.background_sound.play()
 
 
     def _check_events(self):
@@ -132,7 +132,7 @@ class AlienInvasion:
         for bullet in self.bullets.copy():
             if bullet.rect.bottom <= 0:
                 self.bullets.remove(bullet)
-                print(len(self.bullets))
+                
 
 
         self._check_bullet_alien_collisions()
